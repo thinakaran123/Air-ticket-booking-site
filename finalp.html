@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ready to fly!</title>
+    <link rel="icon" type="image/x-icon" href="favicon/airplane.ico">
+
+    <link rel="stylesheet" href="finalp.css">
+    <!-- Latest compiled and minified CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Latest compiled JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script>
+// thank u page opening
+function finalpageforcc(){
+var otpfinal=document.getElementById("cc-otp-input").value;
+if(otpfinal!=""){
+        window.location.href="thanku.html";
+}
+else{
+    alert("please fill required")
+}
+}
+
+function finalpagefornb(){
+var otpfinal=document.getElementById("nb-otp-input").value;
+if(otpfinal!=""){
+        window.location.href="thanku.html";
+}
+else{
+    alert("please fill required")
+}
+}
+
+
+function finalpageforpayon(){
+var otpfinal=document.getElementById("otp-payon-input").value;
+if(otpfinal!=""){
+        window.location.href="thanku.html";
+}
+else{
+    alert("please fill required")
+}
+}
+
+// end
+function addicon(){
+const mem=document.getElementById("Members").value;
+    
+    var txt1= '<label>Name</label><br><input required type="text" placeholder="First Name">'
+    var txt2= '<input required type="text" placeholder="Last Name">'
+   var txt3= '<label>Age</label><br><input required type="number"   placeholder="Age" maxlength="3">'
+   var txt4= '<label>Gender</label><br><input required type="text" placeholder="Gender">'
+  var btn='<button id="close"  class="btn btn-danger">X close</button>'
+    
+//   function closebtn(){
+//     $("#pforadd").hide();
+//   };
+for(var i=1;i<=mem;i++){
+$("#pforadd").append(txt1,"<br>",txt2,"<p></p>",txt3,"<p></p>",txt4,"<br><br>",btn,"<hr>");
+}
+$("#close").click(function(){
+    $("#pforadd").remove();
+});
+}
+
+// creditcard  popup start    
+$(document).ready(function(){
+    $("#cc-pp").click(function(){
+    $("#creditcard").css("display","block");
+});
+});
+     // Function to show and hide the popup
+     function togglePopup() {
+            $(".creditcard").toggle();
+        }
+
+// otp-btn
+$(document).ready(function(){
+    $("#otp-btn").click(function(){
+        $("#otp-btn").css("display","none");        
+$("#otp").css("display","block");
+$("#cc-done-btn").hide();
+    });
+});
+//creditcard popup end
+
+// netbanking popup start
+$(document).ready(function(){
+    $("#nb-pp").click(function(){
+    $("#netbanking").css("display","block");
+});
+});
+
+// close btn
+function togglePopupnb() {
+            $(".netbanking").toggle();
+        }
+
+        // otp
+        $(document).ready(function(){
+    $("#otp-btn-nb").click(function(){
+        $("#otp-btn-nb").css("display","none");        
+$("#otp-nb").css("display","block");
+    });
+});
+// end for nb popup
+
+// start for payon start
+$(document).ready(function(){
+    $("#payon-pp").click(function(){
+    $("#payoneer").css("display","block");
+});
+});
+
+// close btn
+function togglePopuppayoneer() {
+            $(".payoneer").toggle();
+        }
+
+          // otp
+          $(document).ready(function(){
+    $("#otp-btn-payon").click(function(){
+        $("#otp-btn-payon").css("display","none");        
+$("#otp-payon").css("display","block");
+    });
+});
+// end for payon start
+
+//cc popup button activate
+function ccpayment(){
+    const ccbox1=document.getElementById("cc-name").value;
+    const ccbox2=document.getElementById("cn").value;
+    const ccbox3=document.getElementById("cc-exp").value;
+    const ccbox4=document.getElementById("cc-sc").value;
+
+    if (ccbox1 != "" && ccbox2 != "" && ccbox3 != "" && ccbox4 != ""){
+       $("#otp-btn").css("display","block"); 
+    }
+
+else{
+    alert("please fill required");
+}
+}
+// end
+
+//nb popup button activate
+function nbpayment(){
+    const nbbox1=document.getElementById("nb-name").value;
+    const nbbox2=document.getElementById("nb-ui").value;
+   
+    if (nbbox1 != "" && nbbox2 != ""){
+       $("#otp-btn-nb").css("display","block");
+       $("#nb-done-btn").css("display","none"); 
+    }
+
+else{
+    alert("please fill required");
+}
+}
+// end
+
+//payon popup button activate
+function payonpayment(){
+    const payonbox1=document.getElementById("payon-name").value;
+    const payonbox2=document.getElementById("payonpass").value;
+   
+    if (payonbox1 != "" && payonbox2 != ""){
+       $("#otp-btn-payon").css("display","block");
+       $("#payon-done-btn").css("display","none"); 
+    }
+
+else{
+    alert("please fill required");
+}
+}
+// end
+
+// final
+function validate() {
+  let input1 = document.
+  
+  getElementById("Members").value;
+  let input2 = document.getElementById("country").value;
+  let input3 = document.getElementById("mobilenumber").value;
+
+  let input4 = document.getElementById("emailid").value;
+  if (input1 != "" && input2 != "" && input3 != "" && input4 != "") {
+  $("#cc-pp").removeAttr("disabled");
+  $("#nb-pp").removeAttr("disabled");
+  $("#payon-pp").removeAttr("disabled");
+}
+  else{
+    alert("Please fill requried");
+  }
+
+}// end
+</script>
+</head>
+<body>
+    <div class="container-fluid" id="full-div">
+        <div class="container-fluid div1-ta" id="div1-ta">
+            <p id="div1-p1">Trip Assure</p>
+            <p>&#x20B9;199/Traveller(18% GST included)</p>
+            <p>Industry-first travel assurance</p>
+            <input required type="radio" id="yes" name="ryn">
+            <label for="yes">Yes, Secure my trip.</label>
+            <br>
+            <input required type="radio" id="no"  name="ryn" >
+            <label for="no">No, I Will risk my trip.</label>
+    </div>
+    <div class="container-fluid div2" id="div2">
+        <p id="div2-p1">How many ?</p>
+        <label for="Members">Members:  </label><input type="text" name="Members" id="Members" min="1" max="10" maxlength="2" style="width: 10%;">
+        <img id="add-icon" onclick="addicon()" src="https://img.icons8.com/ios-glyphs/30/null/plus--v1.png"/>
+        <div class="alert alert-primary" role="alert" id="div2-subdiv">Enter name as mentioned on your passport or Government approved IDs.</div>
+    
+    <p id="pforadd"></p>
+   </div> 
+    <div class="div3">
+        <p>Booking details will be sent to</p>
+        <!-- country code dd -->
+        <select  style="width: 18%;" class="form-select" id="country" name="country">
+    <option>select country</option>
+    <option value="AF">Afghanistan</option>
+    <option value="AX">Aland Islands</option>
+    <option value="AL">Albania</option>
+    <option value="DZ">Algeria</option>
+    <option value="AS">American Samoa</option>
+    <option value="AD">Andorra</option>
+    <option value="AO">Angola</option>
+    <option value="AI">Anguilla</option>
+    <option value="AQ">Antarctica</option>
+    <option value="AG">Antigua and Barbuda</option>
+    <option value="AR">Argentina</option>
+    <option value="AM">Armenia</option>
+    <option value="AW">Aruba</option>
+    <option value="AU">Australia</option>
+    <option value="AT">Austria</option>
+    <option value="AZ">Azerbaijan</option>
+    <option value="BS">Bahamas</option>
+    <option value="BH">Bahrain</option>
+    <option value="BD">Bangladesh</option>
+    <option value="BB">Barbados</option>
+    <option value="BY">Belarus</option>
+    <option value="BE">Belgium</option>
+    <option value="BZ">Belize</option>
+    <option value="BJ">Benin</option>
+    <option value="BM">Bermuda</option>
+    <option value="BT">Bhutan</option>
+    <option value="BO">Bolivia</option>
+    <option value="BQ">Bonaire, Sint Eustatius and Saba</option>
+    <option value="BA">Bosnia and Herzegovina</option>
+    <option value="BW">Botswana</option>
+    <option value="BV">Bouvet Island</option>
+    <option value="BR">Brazil</option>
+    <option value="IO">British Indian Ocean Territory</option>
+    <option value="BN">Brunei Darussalam</option>
+    <option value="BG">Bulgaria</option>
+    <option value="BF">Burkina Faso</option>
+    <option value="BI">Burundi</option>
+    <option value="KH">Cambodia</option>
+    <option value="CM">Cameroon</option>
+    <option value="CA">Canada</option>
+    <option value="CV">Cape Verde</option>
+    <option value="KY">Cayman Islands</option>
+    <option value="CF">Central African Republic</option>
+    <option value="TD">Chad</option>
+    <option value="CL">Chile</option>
+    <option value="CN">China</option>
+    <option value="CX">Christmas Island</option>
+    <option value="CC">Cocos (Keeling) Islands</option>
+    <option value="CO">Colombia</option>
+    <option value="KM">Comoros</option>
+    <option value="CG">Congo</option>
+    <option value="CD">Congo, Democratic Republic of the Congo</option>
+    <option value="CK">Cook Islands</option>
+    <option value="CR">Costa Rica</option>
+    <option value="CI">Cote D'Ivoire</option>
+    <option value="HR">Croatia</option>
+    <option value="CU">Cuba</option>
+    <option value="CW">Curacao</option>
+    <option value="CY">Cyprus</option>
+    <option value="CZ">Czech Republic</option>
+    <option value="DK">Denmark</option>
+    <option value="DJ">Djibouti</option>
+    <option value="DM">Dominica</option>
+    <option value="DO">Dominican Republic</option>
+    <option value="EC">Ecuador</option>
+    <option value="EG">Egypt</option>
+    <option value="SV">El Salvador</option>
+    <option value="GQ">Equatorial Guinea</option>
+    <option value="ER">Eritrea</option>
+    <option value="EE">Estonia</option>
+    <option value="ET">Ethiopia</option>
+    <option value="FK">Falkland Islands (Malvinas)</option>
+    <option value="FO">Faroe Islands</option>
+    <option value="FJ">Fiji</option>
+    <option value="FI">Finland</option>
+    <option value="FR">France</option>
+    <option value="GF">French Guiana</option>
+    <option value="PF">French Polynesia</option>
+    <option value="TF">French Southern Territories</option>
+    <option value="GA">Gabon</option>
+    <option value="GM">Gambia</option>
+    <option value="GE">Georgia</option>
+    <option value="DE">Germany</option>
+    <option value="GH">Ghana</option>
+    <option value="GI">Gibraltar</option>
+    <option value="GR">Greece</option>
+    <option value="GL">Greenland</option>
+    <option value="GD">Grenada</option>
+    <option value="GP">Guadeloupe</option>
+    <option value="GU">Guam</option>
+    <option value="GT">Guatemala</option>
+    <option value="GG">Guernsey</option>
+    <option value="GN">Guinea</option>
+    <option value="GW">Guinea-Bissau</option>
+    <option value="GY">Guyana</option>
+    <option value="HT">Haiti</option>
+    <option value="HM">Heard Island and Mcdonald Islands</option>
+    <option value="VA">Holy See (Vatican City State)</option>
+    <option value="HN">Honduras</option>
+    <option value="HK">Hong Kong</option>
+    <option value="HU">Hungary</option>
+    <option value="IS">Iceland</option>
+    <option value="IN">India</option>
+    <option value="ID">Indonesia</option>
+    <option value="IR">Iran, Islamic Republic of</option>
+    <option value="IQ">Iraq</option>
+    <option value="IE">Ireland</option>
+    <option value="IM">Isle of Man</option>
+    <option value="IL">Israel</option>
+    <option value="IT">Italy</option>
+    <option value="JM">Jamaica</option>
+    <option value="JP">Japan</option>
+    <option value="JE">Jersey</option>
+    <option value="JO">Jordan</option>
+    <option value="KZ">Kazakhstan</option>
+    <option value="KE">Kenya</option>
+    <option value="KI">Kiribati</option>
+    <option value="KP">Korea, Democratic People's Republic of</option>
+    <option value="KR">Korea, Republic of</option>
+    <option value="XK">Kosovo</option>
+    <option value="KW">Kuwait</option>
+    <option value="KG">Kyrgyzstan</option>
+    <option value="LA">Lao People's Democratic Republic</option>
+    <option value="LV">Latvia</option>
+    <option value="LB">Lebanon</option>
+    <option value="LS">Lesotho</option>
+    <option value="LR">Liberia</option>
+    <option value="LY">Libyan Arab Jamahiriya</option>
+    <option value="LI">Liechtenstein</option>
+    <option value="LT">Lithuania</option>
+    <option value="LU">Luxembourg</option>
+    <option value="MO">Macao</option>
+    <option value="MK">Macedonia, the Former Yugoslav Republic of</option>
+    <option value="MG">Madagascar</option>
+    <option value="MW">Malawi</option>
+    <option value="MY">Malaysia</option>
+    <option value="MV">Maldives</option>
+    <option value="ML">Mali</option>
+    <option value="MT">Malta</option>
+    <option value="MH">Marshall Islands</option>
+    <option value="MQ">Martinique</option>
+    <option value="MR">Mauritania</option>
+    <option value="MU">Mauritius</option>
+    <option value="YT">Mayotte</option>
+    <option value="MX">Mexico</option>
+    <option value="FM">Micronesia, Federated States of</option>
+    <option value="MD">Moldova, Republic of</option>
+    <option value="MC">Monaco</option>
+    <option value="MN">Mongolia</option>
+    <option value="ME">Montenegro</option>
+    <option value="MS">Montserrat</option>
+    <option value="MA">Morocco</option>
+    <option value="MZ">Mozambique</option>
+    <option value="MM">Myanmar</option>
+    <option value="NA">Namibia</option>
+    <option value="NR">Nauru</option>
+    <option value="NP">Nepal</option>
+    <option value="NL">Netherlands</option>
+    <option value="AN">Netherlands Antilles</option>
+    <option value="NC">New Caledonia</option>
+    <option value="NZ">New Zealand</option>
+    <option value="NI">Nicaragua</option>
+    <option value="NE">Niger</option>
+    <option value="NG">Nigeria</option>
+    <option value="NU">Niue</option>
+    <option value="NF">Norfolk Island</option>
+    <option value="MP">Northern Mariana Islands</option>
+    <option value="NO">Norway</option>
+    <option value="OM">Oman</option>
+    <option value="PK">Pakistan</option>
+    <option value="PW">Palau</option>
+    <option value="PS">Palestinian Territory, Occupied</option>
+    <option value="PA">Panama</option>
+    <option value="PG">Papua New Guinea</option>
+    <option value="PY">Paraguay</option>
+    <option value="PE">Peru</option>
+    <option value="PH">Philippines</option>
+    <option value="PN">Pitcairn</option>
+    <option value="PL">Poland</option>
+    <option value="PT">Portugal</option>
+    <option value="PR">Puerto Rico</option>
+    <option value="QA">Qatar</option>
+    <option value="RE">Reunion</option>
+    <option value="RO">Romania</option>
+    <option value="RU">Russian Federation</option>
+    <option value="RW">Rwanda</option>
+    <option value="BL">Saint Barthelemy</option>
+    <option value="SH">Saint Helena</option>
+    <option value="KN">Saint Kitts and Nevis</option>
+    <option value="LC">Saint Lucia</option>
+    <option value="MF">Saint Martin</option>
+    <option value="PM">Saint Pierre and Miquelon</option>
+    <option value="VC">Saint Vincent and the Grenadines</option>
+    <option value="WS">Samoa</option>
+    <option value="SM">San Marino</option>
+    <option value="ST">Sao Tome and Principe</option>
+    <option value="SA">Saudi Arabia</option>
+    <option value="SN">Senegal</option>
+    <option value="RS">Serbia</option>
+    <option value="CS">Serbia and Montenegro</option>
+    <option value="SC">Seychelles</option>
+    <option value="SL">Sierra Leone</option>
+    <option value="SG">Singapore</option>
+    <option value="SX">Sint Maarten</option>
+    <option value="SK">Slovakia</option>
+    <option value="SI">Slovenia</option>
+    <option value="SB">Solomon Islands</option>
+    <option value="SO">Somalia</option>
+    <option value="ZA">South Africa</option>
+    <option value="GS">South Georgia and the South Sandwich Islands</option>
+    <option value="SS">South Sudan</option>
+    <option value="ES">Spain</option>
+    <option value="LK">Sri Lanka</option>
+    <option value="SD">Sudan</option>
+    <option value="SR">Suriname</option>
+    <option value="SJ">Svalbard and Jan Mayen</option>
+    <option value="SZ">Swaziland</option>
+    <option value="SE">Sweden</option>
+    <option value="CH">Switzerland</option>
+    <option value="SY">Syrian Arab Republic</option>
+    <option value="TW">Taiwan, Province of China</option>
+    <option value="TJ">Tajikistan</option>
+    <option value="TZ">Tanzania, United Republic of</option>
+    <option value="TH">Thailand</option>
+    <option value="TL">Timor-Leste</option>
+    <option value="TG">Togo</option>
+    <option value="TK">Tokelau</option>
+    <option value="TO">Tonga</option>
+    <option value="TT">Trinidad and Tobago</option>
+    <option value="TN">Tunisia</option>
+    <option value="TR">Turkey</option>
+    <option value="TM">Turkmenistan</option>
+    <option value="TC">Turks and Caicos Islands</option>
+    <option value="TV">Tuvalu</option>
+    <option value="UG">Uganda</option>
+    <option value="UA">Ukraine</option>
+    <option value="AE">United Arab Emirates</option>
+    <option value="GB">United Kingdom</option>
+    <option value="US">United States</option>
+    <option value="UM">United States Minor Outlying Islands</option>
+    <option value="UY">Uruguay</option>
+    <option value="UZ">Uzbekistan</option>
+    <option value="VU">Vanuatu</option>
+    <option value="VE">Venezuela</option>
+    <option value="VN">Viet Nam</option>
+    <option value="VG">Virgin Islands, British</option>
+    <option value="VI">Virgin Islands, U.s.</option>
+    <option value="WF">Wallis and Futuna</option>
+    <option value="EH">Western Sahara</option>
+    <option value="YE">Yemen</option>
+    <option value="ZM">Zambia</option>
+    <option value="ZW">Zimbabwe</option>
+</select>
+        <!-- end -->
+        <br>
+        <input required type="tel" name="" id="mobilenumber" placeholder="Mobile number">
+        <input required type="email" id="emailid" placeholder="Email">
+    </div>
+
+<div class="div4">
+<p><input type="checkbox"> I have a GST number (Optional)</p>
+<input type="text" required placeholder="Company Name">
+<input type="number" required placeholder="Registration No">
+</div>
+
+<div class="div5">
+    <p>Payment Options</p>
+    <div  class="btn-group" role="group" aria-label="Basic example">
+        <button disabled id="cc-pp" type="button" class="btn btn-primary">Credit Card</button>
+        <button disabled id="nb-pp" type="button" class="btn btn-primary">Net Banking</button>
+        <button disabled id="payon-pp" type="button" class="btn btn-primary">payoneer</button>
+      </div> 
+    <button id="mpay" class="btn btn-success" onclick="validate()">Make Payment</button>
+    </div>
+      <!-- creditcard -->
+    <div class="creditcard" id="creditcard">
+        <div  onclick="togglePopup()"  class="close-btn">X</div>
+        <img id="cc-img" src="https://img.icons8.com/emoji/390/null/credit-card-emoji.png"/>
+        
+        
+        <div id="inner-content-cc">
+        <form action="">
+            <div id="inner-content-cc-name">
+        <label for="cc-name" id="cc-name">Name</label>
+        <input type="text" name="cc-name" id="cc-name" required>
+        </div>
+        <div id="inner-content-cc-cn">
+        <label for="cn">Card Number</label>
+        <input id="cn" type="number" required maxlength="16" name="cn">
+        </div>
+        <div  id="inner-content-cc-esc">
+        <label for="cc-exp">Expiry</label>
+        <input type="text" id="cc-exp" required name="cc-exp" maxlength="5" style="width:88px" placeholder="MM/YY">
+        <label for="cc-sc">Security code</label>
+        <input id="cc-sc" name="cc-sc" required type="number"  placeholder="0XX" maxlength="3" style="width:53px">
+         
+    </div>
+   
+    
+</form>
+<div id="otp">
+    <hr>
+<label for="otp">OTP:</label>
+<input id="cc-otp-input" style="width: 50%;" type="number" name="otp" maxlength="4" placeholder="4-digit" >
+<a href="thanku.html"><button  id="cc-submit-button"  class="btn btn-primary">Submit</button></a>        
+</div>
+<button id="cc-done-btn" onclick="ccpayment()" class="btn btn-success">Done</button>   
+<BUtton id="otp-btn" class="btn btn-outline-primary">Get OTP!</BUtton>
+
+</div> 
+</div>
+<!-- cc end -->
+
+<!-- netbanking -->
+<div class="netbanking" id="netbanking">
+    <div  onclick="togglePopupnb()"  class="close-btn">X</div>
+   
+
+<div id="inner-content-nb">
+    <form action="">
+        <div id="inner-content-nb-name">
+    <label for="nb-name" class="nb-name" id="nb-name">Name</label>
+    <input type="text" name="nb-name" class="nb-name" id="nb-name" required>
+    <br><br>
+    <label for="nbci">User Id/Customer Id</label>
+    <input type="text" required id="nb-ui" name="nbui">
+    </div>
+    <hr>
+ 
+    
+</form>
+<div id="otp-nb">
+    
+    <label for="otp-nb">OTP:</label>
+    <input id="nb-otp-input" style="width: 50%;" type="number" name="otp" maxlength="4" placeholder="4-digit" >
+    <a href="thanku.html"><button onclick="finalpagefornb" id="nb-submit-button" class="btn btn-primary">Submit</button></a>        
+    </div>
+ <div id="bank-img">
+    <img src="src/hdfc.jpg" width="10%" alt="hdfc">
+   <img src="src/icici.png" width="10%" alt="icici">
+   <img src="src/cub.png" width="10%" alt="cub"> 
+   <img src="src/fb.jpg" width="10%" alt="Fb">
+   </div>
+   
+<BUtton id="otp-btn-nb" class="btn btn-outline-primary">Get OTP!</BUtton>
+<button id="nb-done-btn" onclick="nbpayment()" class="btn btn-success">Done</button>   
+
+</div> 
+</div>
+<!-- end -->
+
+<!-- payoneer -->
+<div class="payoneer" id="payoneer">
+    <div  onclick="togglePopuppayoneer()"  class="close-btn">X</div>
+   
+
+<div id="inner-content-payon">
+    <div id="payon-logo">
+        <img src="src/Payoneer.png" width="50%" alt="Payoneer">
+       </div>
+    <form action="">
+        <div id="inner-content-payon-name">
+    <label for="payon-name" class="payon-name" id="payon-name">User Id</label>
+    <input type="text" name="payon-name" class="payon-name" id="payon-name" required>
+    <br><br>
+    <label class="payonps" for="payonps">Password</label>
+    <input id="payonpass" type="password" class="payonps" required  name="payonps">
+    </div>
+    <hr>
+
+
+</form>
+<div id="otp-payon">
+    
+    <label for="otp-payon">OTP:</label>
+    <input id="otp-payon-input" style="width: 50%;" type="number" name="otp-payon" maxlength="4" placeholder="4-digit" >
+    <button onclick="finalpageforpayon()" type="submit" id="payon-submit-button" class="btn btn-primary">Submit</button>        
+    </div>
+    
+<button id="payon-done-btn" onclick="payonpayment()" class="btn btn-success">Done</button>   
+<BUtton id="otp-btn-payon" class="btn btn-outline-primary">Get OTP!</BUtton>
+</div> 
+</div>
+
+<!-- end -->
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,477 @@
+#full-div{
+    background-color: #e5eef4;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* first div */
+#div1-ta{
+    padding: 1%;
+    margin-left: 15%;
+    width:70%;
+    background-color: white;
+}
+#div1-p1{
+    font-weight: 600;
+    font-size: 150%;
+}
+div p:not(:first-child){
+ font-weight: 500;
+ font-size: 120%;
+}
+#div1-ta label{
+    font-weight: 500;
+    
+    font-size: 110%;
+}
+/* end */
+
+/* 2div */
+#div2{
+    margin-top: 1%;
+    padding: 1%;
+    margin-left: 15%;
+    width:70%;
+    background-color: white;
+}
+#div2-p1{
+    font-weight: 600;
+    font-size: 130%;
+}
+div p:not(:first-child){
+ font-weight: 500;
+ font-size: 120%;
+}
+#div2 label{
+    font-weight: 500;
+    
+    font-size: 110%;
+}
+#div2-subdiv{
+    margin-top: 1%;
+    font-weight: 500;
+    
+    font-size: 110%;
+}
+/* end */
+
+/* 
+div3 */
+.div3{
+    margin-top: 1%;
+    padding: 1%;
+    margin-left: 15%;
+    width:70%;
+    background-color: white;
+}
+.div3 p{
+    font-weight: 500;
+    font-size: 120%;
+}
+/* end */
+/* div4 */
+.div4,.div5{
+    margin-top: 1%;
+    padding: 1%;
+    margin-left: 15%;
+    width:70%;
+    background-color: white;
+}
+/* end */
+/* div5 */
+
+/* cc popup */
+#creditcard{
+    position: absolute;
+    top:70%;
+    left:50%;
+border-radius: 5%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    height: 60%;
+    text-align: center;
+    background-color:#c8cfdb;
+    box-sizing: border-box;
+    z-index: 100;
+    display: none;
+    /*to hide popup initially*/
+}
+  
+.close-btn {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    padding: 4px;
+}
+    
+#cc-img{
+    position: absolute;
+    left:5%;
+}
+#inner-content-cc{
+    width: 100px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 150%;
+        font-weight: 500;
+}
+#inner-content-cc-name{
+    position: absolute;
+    top:26%;
+    left:50%;
+}
+#inner-content-cc-cn{
+    position: absolute;
+    top:43%;
+    left:46%;
+}
+#inner-content-cc-cn input{
+    width:50%;
+}
+#inner-content-cc-esc{
+    position: absolute;
+    top:60%;
+    left:50%;
+}
+
+#otp-btn{
+    display: none;
+position: absolute;
+top:83%;
+left:50%;
+}
+#cc-done-btn{
+    position: absolute;
+    top:83%;
+    left:70%;
+}
+#otp{
+    display: none;
+    position: absolute;
+    top:75%;
+    left:45%;
+}
+/* credi card popup end */
+
+/* net banking popup start */
+#netbanking{
+     position: absolute;
+    top:70%;
+    left:50%;
+border-radius: 5%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+    height: 60%;
+    text-align: center;
+    background-color:#c8cfdb;
+    box-sizing: border-box;
+    z-index: 100;
+    display: none;
+    /*to hide popup initially*/
+}
+
+#netbanking .close-btn {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    padding: 4px;
+}
+#inner-content-nb {
+display: flex;
+flex-wrap: nowrap;
+margin-top: 1%;
+padding: 10%;
+text-align: left;
+    font-size: 150%;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#otp-btn-nb{
+    display: none;
+    position: absolute;
+    top:70%;
+    left:30%;
+}
+#nb-done-btn{
+    position: absolute;
+    top:70%;
+    left:30%;
+
+}
+#otp-nb{
+    position: absolute;
+    top:70%;
+    display: none;
+}
+
+#bank-img{
+    position: absolute;
+    bottom: 1%;
+    left:30%;
+}
+#bank-img img{
+padding-left: 2%;
+}
+
+/* net banking popup end */
+
+/* payon start */
+#payoneer{
+    position: absolute;
+   top:70%;
+   left:50%;
+border-radius: 5%;
+   transform: translate(-50%, -50%);
+   width: 40%;
+   height: 60%;
+   text-align: center;
+   background-color:#c8cfdb;
+   box-sizing: border-box;
+   z-index: 100;
+   display: none;
+   /*to hide popup initially*/
+}
+#otp-btn-payon{
+    position: absolute;
+    left:40%;
+    display:none;
+}
+#payoneer .close-btn {
+   position: absolute;
+   right: 20px;
+   top: 15px;
+   background-color: black;
+   color: white;
+   border-radius: 50%;
+   padding: 4px;
+}
+#otp-payon{
+    display: none;
+}
+
+#payoneer{
+    font-size: 150%;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.payonps{
+margin-bottom: 2%;
+}
+/* payon end */
+
+@media screen and (max-width:480px) and (max-width:767px){
+#div1-ta, #div2, .div3, .div4, .div5{
+    margin-top: 1%;
+    padding: 1%;
+    margin-left: 1%;
+    width:100%;
+}
+#mpay{
+    margin-top: 3%;
+}
+#creditcard{
+    text-align: left;
+    position: absolute;
+    top:70%;
+    left:50%;
+border-radius: 5%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 60%;
+    
+    background-color:#c8cfdb;
+    box-sizing: border-box;
+    z-index: 100;
+    display: none;
+       
+}
+.close-btn {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    padding: 4px;
+}
+    
+#cc-img{
+display: none;
+}
+#inner-content-cc{
+    width: 100px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 130%;
+        font-weight: 500;
+}
+#inner-content-cc-name{
+    position: absolute;
+    top:16%;
+    left:10%;
+    width: 10%;
+}
+#inner-content-cc-name #cc-name{
+    width:500%;
+}
+#inner-content-cc-cn{
+    position: absolute;
+    top:36%;
+    left:10%;
+}
+#inner-content-cc-cn #cn{
+    width:50%;
+}
+#inner-content-cc-esc{
+    position: absolute;
+    top:50%;
+    left:10%;
+}
+
+#otp-btn{
+    display: none;
+position: absolute;
+top:83%;
+left:15%;
+}
+#cc-done-btn{
+    position: absolute;
+    top:83%;
+    left:50%;
+}
+#otp{
+    display: none;
+    position: absolute;
+    top:75%;
+    left:5%;
+}
+#otp #cc-submit-button{
+    position: absolute;
+    top:50%;
+    right:4%;
+}
+
+/* net banking popup start */
+#netbanking{
+    position: absolute;
+   top:70%;
+   left:50%;
+border-radius: 5%;
+   transform: translate(-50%, -50%);
+   width: 100%;
+   height: 60%;
+   text-align: left;
+   background-color:#c8cfdb;
+   box-sizing: border-box;
+   z-index: 100;
+   display: none;
+   /*to hide popup initially*/
+}
+
+#netbanking .close-btn {
+   position: absolute;
+   right: 20px;
+   top: 15px;
+   background-color: black;
+   color: white;
+   border-radius: 50%;
+   padding: 4px;
+}
+#inner-content-nb {
+display: flex;
+flex-wrap: nowrap;
+margin-top: 1%;
+padding: 10%;
+text-align: left;
+   font-size: 150%;
+   font-weight: 500;
+   font-family: Arial, Helvetica, sans-serif;
+}
+#otp-btn-nb{
+   display: none;
+   position: absolute;
+   top:70%;
+   left:30%;
+}
+#nb-name, #nb-ui{
+    width: 70%;
+}
+#nb-done-btn{
+   position: absolute;
+   top:70%;
+   left:30%;
+
+}
+#nb-otp-input{
+    width: 40%;
+}
+#otp-nb{
+   position: absolute;
+   top:70%;
+   display: none;
+}
+
+#bank-img{
+   position: absolute;
+   bottom: 1%;
+   left:30%;
+}
+#bank-img img{
+    width:10%;
+padding-left: 2%;
+}
+
+/* net banking popup end */
+
+/* payon start */
+#payoneer{
+    position: absolute;
+   top:70%;
+   left:50%;
+border-radius: 5%;
+   transform: translate(-50%, -50%);
+   width: 100%;
+   height: 60%;
+   text-align: left;
+   background-color:#c8cfdb;
+   box-sizing: border-box;
+   z-index: 100;
+   display: none;
+   /*to hide popup initially*/
+}
+#otp-btn-payon{
+    position: absolute;
+    left:40%;
+    display:none;
+}
+#payoneer .close-btn {
+   position: absolute;
+   right: 20px;
+   top: 15px;
+   background-color: black;
+   color: white;
+   border-radius: 50%;
+   padding: 4px;
+}
+#payon-name, #payonpass{
+    width:60%;
+}
+#otp-payon{
+    display: none;
+}
+
+#payoneer{
+    font-size: 150%;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.payonps{
+margin-bottom: 2%;
+}
+/* payon end */
+
+}

@@ -1,0 +1,222 @@
+.navbar{
+    background-color: #18122B;
+    
+}
+.navbar-brand span, .navbar .nav-item .nav-link{
+    color:white;
+}
+.navbar .nav-item .nav-link:hover{
+    text-decoration: underline;
+}
+body{
+    background-color: #443C68;
+}
+label{
+    color:white;
+}
+
+.form-control{
+    width:150%;
+}
+legend{
+    color: white;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+#logo{
+    position: absolute;
+    top:20%;
+    left:35%;
+}
+#bookfont{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-weight: 600;
+    font-size: 350%;
+
+}
+img{
+    vertical-align: text-bottom;
+}
+.clicktodiv2{
+    font-size: 500%;
+    color: #18122B;
+}
+
+#sbutton1{
+    position: absolute;
+    left:30%;
+    top:90%;
+    z-index: 100;
+}
+#sbutton2{
+    position: absolute;
+    left:55%;
+    top:90%;
+    z-index: 100;
+}
+
+/* popup */
+#pop{
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+   top:50%;
+   left:50%;
+    border-radius: 5%;
+   transform: translate(-50%, -50%);
+   width: 40%;
+   height: 60%;
+   padding: 1%;
+   text-align: center;
+   background-color:white;
+   box-sizing: border-box;
+   z-index: 100;
+   display: none;
+   /*to hide popup initially*/
+}
+#pop h3{
+    font-size: 130%;
+    font-weight: 600;
+}
+#pop p{
+    font-size: 110%;
+    text-align: left;
+    margin-left: 3%;
+}
+
+.close-btn {
+   position: absolute;
+   right: 20px;
+   top: 15px;
+   background-color: black;
+   color: white;
+   border-radius: 50%;
+   padding: 4px;
+}
+h3{
+    margin-left: 3%;
+    text-align: left;
+}
+/* ////// */
+#div1{
+    position: absolute;
+    left:21%;
+    top:35%;
+}
+#divider{
+    position: absolute;
+    left:48%;
+    top:35%;
+
+    border-radius: 30%;
+background-color: white;
+    width: 1%;
+    height: 400px;
+}
+#div2{
+    position: absolute;
+    left:53%;
+    top:35%;
+}
+#div2 input{
+    width:130%;
+}
+
+/* recycle-icon */
+#recycle-icon{
+    position: absolute;
+    top:85%;
+    left:85%;
+}
+
+/* media quweris */
+@media screen and (max-width:480px) and (max-width:767px){
+    #logo{
+        position: absolute;
+        left:15%;
+    }
+    #logo img{
+        width: 20%;
+    }
+    #logo #bookfont{
+        font-size: 250%;
+    }
+    #divider{
+        display: none;
+    }
+    .div1 #div1{
+        position: absolute;
+        top:40%;
+        left: 4%;
+    }
+    .div1 #sbutton1{
+        position: absolute;
+        top:90%;
+        left:33%;
+    }
+    #div1 input{
+        width: 120%;
+    }
+    .div2 #sbutton2{
+        position: absolute;
+        top:158%;
+        left:29%;
+    }
+    .div2 #div2{
+        position: absolute;
+        top:100%;
+        left: 5%;
+    }
+    #reseticon #recycle-icon{
+        width: 25%;
+        position: fixed;
+        top:33%;
+        left:59%;
+    }
+#pop{
+    width: 80%;
+    height:70%;
+}
+}
+
+/* 750 */
+@media screen and (max-width:1200px){
+    #logo{
+text-align: center;
+    }
+    #logo img{
+        width: 15%;
+    }
+    #bookfont{
+        font-size: 350%;
+    }
+    #div1{
+        position: absolute;
+        left: 15%;
+    }
+    #div1 input{
+        width: 120%;
+    }
+    #sbutton1{
+        position: absolute;
+        top:82%;
+        left:23%;
+    }
+
+    #sbutton2{
+        position: absolute;
+        top:82%;
+        left:63%;
+    }
+    #div2{
+        position: absolute;
+        top:35%;
+        left: 55%;
+    }
+    #recycle-icon{
+        width: 8%;
+        position: fixed;
+        top:83%;
+        left:89%;
+    }
+}

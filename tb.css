@@ -1,0 +1,224 @@
+.navbar{
+    background-color: #18122B;
+    
+}
+.navbar-brand span, .navbar .nav-item .nav-link{
+    color:white;
+}
+.navbar .nav-item .nav-link:hover{
+    text-decoration: underline;
+}
+.navbar a{color: white;}
+/* div */
+#sdiv{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 120%;
+    padding: 2%;
+    color: white;
+  background-color: #443C68;  
+}
+#sdiv-i{
+    padding-top: 2%;
+    padding-right: 3%;
+}
+#sdiv-ii #dd{
+    width: 50%;
+}
+#sdiv-ii #rd{
+    width: 50%;
+}
+
+#sdiv-ii{
+    padding-top: 2%;
+
+    padding-right: 3%;
+}
+#sdiv-ii input{
+    width:15%;
+}
+#sbtn{
+    margin-top: 3%;
+    text-align: center;
+    
+}
+#sbtn button{
+    font-weight: 500;
+    font-size: 100%;
+    border: white solid;
+    background-color: white;
+    color: black;
+}
+
+/* transfer */
+#transfer{
+    margin-left: 20%;
+    width: 15%;
+}
+/* Increase radio button's size */
+input[type='radio']{
+    width: 20px;
+    height: 17px;
+}
+#sbtn button:hover{
+    font-weight: 500;
+    font-size: 100%;
+    border: black solid;
+    background-color: black;
+    color: white;
+}
+#airline-name{
+    font-weight: 550;
+    font-size: 150%;
+}
+#air-tickets-i{
+    margin-top: 1%;
+    padding: 1%;
+     background-color: #e1e7ee;
+}
+#at-sec-i{
+    display: flex;
+}
+#at-sec-i-p1{
+    margin-left: 8%;
+ 
+}
+.at-sec-i-p1{
+    text-transform: uppercase;
+    font-size: 130%;
+    font-weight: 500;
+}
+.at-sec-i-p2{
+    text-transform: uppercase;
+    font-size: 150%;
+    font-weight: 500;
+}
+#at-sec-i-p2{
+    margin-left: 37%;
+}
+#at-sec-ii{
+    font-size: 150%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    align-items: start;
+    
+}
+#vf-btn{
+    text-align: center;
+}
+
+#book-btn{
+    margin-top: 4%;
+    text-align: center;
+}
+#popup {
+    position: fixed;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 230px;
+    text-align: center;
+    background-color: #e8eae6;
+    box-sizing: border-box;
+    padding: 10px;
+    z-index: 100;
+    display: none;
+    /*to hide popup initially*/
+}
+  
+.close-btn {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    padding: 4px;
+}
+
+/* media query */
+@media screen and (max-width:480px) and (max-width:767px){
+#sdiv-i{
+ text-align: center;
+}
+#transfer{
+    margin-left: 1%;
+}
+#sdiv-ii #dd{
+    margin-top: 3%;
+}
+#sdiv-ii #rd{
+    margin-top: 1%;
+}
+#sdiv-ii #ps{
+    margin-top: 5%;
+}
+#sdiv-ii #class{
+    margin-top: 3%;
+}
+#sdiv #sbtn{
+margin-top: 3%;
+}
+#air-tickets{
+    margin: 2%;
+    padding: 5%;
+    width: 100%;
+    
+}
+.at-sec-i-p1, .at-sec-i-p2{
+    font-size: 150%;
+    font-weight: 600;
+}
+#at-sec-ii{
+    font-size: 130%;
+}
+#popup{
+    position: fixed;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 295px;
+    height: 240px;
+    text-align: center;
+    background-color: #e8eae6;
+    box-sizing: border-box;
+    padding: 10px;
+    z-index: 100;
+    display: none;
+    
+}
+}
+@media screen and (max-width:1024px) {
+    #sdiv-ii #dd{
+        margin-top: 3%;
+    }
+    #sdiv-ii #rd{
+        margin-top: 1%;
+    }
+    #sdiv-ii #ps{
+        margin-top: 5%;
+    }
+    #sdiv-ii #class{
+        margin-top: 3%;
+    }
+    #sdiv #sbtn{
+    margin-top: 3%;
+    }
+    #popup{
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 295px;
+        height: 240px;
+        text-align: center;
+        background-color: #e8eae6;
+        box-sizing: border-box;
+        padding: 10px;
+        z-index: 100;
+        display: none;
+        
+    }
+    
+}
+    

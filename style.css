@@ -1,0 +1,93 @@
+/* #635985
+#443C68
+#393053
+#18122B */
+.navbar{
+    background-color: #18122B;
+    
+}
+.navbar-brand span, .navbar .nav-item .nav-link{
+    color:white;
+
+}
+.navbar .navbar-nav .nav-item .nl{
+    display: inline;
+    color: white;
+    float: right;
+}
+.navbar .nav-item .nav-link:hover{
+    text-decoration: underline;
+}
+body{
+    background-image: url("src/bg.jpg");
+    background-size: 1500px 1000px;
+}
+#menu-icon{
+    display: none;
+}
+
+/* table */
+#table{
+    position: absolute;
+    top:30%;
+    left:20%;
+    width:60%;
+    
+}
+.table-reponsive{
+    overflow-x: auto;
+}
+
+/* media queries */
+@media screen and (max-width:480px) and (max-width:767px){
+/* navbar     */
+table, thead, tbody, th, td, tr { 
+    display: block; 
+}
+/* Section four*/
+thead tr { 
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+}
+
+tr { border-bottom: 1px solid #ccc; }
+/* Section five*/
+td { 
+ border: none;
+ border-bottom: 1px solid #eee; 
+ position: relative;
+ padding-left: 50%; 
+}
+td:before { 
+    position: absolute;
+    top: 3px;
+    left: 6px;
+    width: 45%; 
+    padding-right: 10px; 
+    white-space: nowrap;
+    font-weight: bold;
+}	
+
+body{
+    background-image: url("src/bg.jpg");
+    background-size: 600px 1650px;
+    background-repeat: no-repeat;
+  
+}
+    #menu-icon{
+        float: right;
+        display: block;
+        
+    }
+   .navbar .navbar-nav .nav-item .nl{
+        display: none;
+        float: right;
+    }
+   section table{
+    position: absolute;
+    margin-left: 0;
+   } 
+/* navbar end for 480px */
+}
+
