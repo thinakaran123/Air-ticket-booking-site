@@ -1,5 +1,5 @@
 
-## Flight Booking & Management Web Application
+## Air Passenger Management Portal
 This project is a multi-page, responsive web application designed for flight searching, ticket booking, and real-time flight status tracking. It features a dynamic frontend built with HTML5, CSS3 (Bootstrap 5), and JavaScript (jQuery).
 
 ## Project Structure
